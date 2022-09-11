@@ -1,0 +1,67 @@
+{
+  "categorys": [
+    {
+      "id": "c4944816-a19f-47d7-8437-91caac85ce20",
+      "name": "Computers",
+      "createdAt": 1662854144844,
+      "updatedAt": 1662854144845
+    },
+    {
+      "id": "1ce16b8a-4ca4-49d6-8126-3926cb2bfd96",
+      "name": "Jewelery",
+      "createdAt": 1662854144845,
+      "updatedAt": 1662854144845
+    }
+  ],
+  "products": [
+    {
+      "id": "19b3b0e2-8fca-46a9-ad8a-f2270172000c",
+      "categoryId": "c4944816-a19f-47d7-8437-91caac85ce20",
+      "name": "Ergonomic Concrete Ball",
+      "color": "pink",
+      "price": 963,
+      "createdAt": 1662854144845,
+      "updatedAt": 1662854144845,
+      "thumbnailUrl": "http://placeimg.com/400/400"
+    },
+    {
+      "id": "68d9a177-47de-465c-8b83-96883c45b7d9",
+      "categoryId": "c4944816-a19f-47d7-8437-91caac85ce20",
+      "name": "Awesome Rubber Ball",
+      "color": "orange",
+      "price": 444,
+      "createdAt": 1662854144845,
+      "updatedAt": 1662854144845,
+      "thumbnailUrl": "http://placeimg.com/400/400"
+    },
+    {
+      "id": "2d14f017-1552-4e7f-a10f-81061aba9e03",
+      "categoryId": "1ce16b8a-4ca4-49d6-8126-3926cb2bfd96",
+      "name": "Gorgeous Cotton Keyboard",
+      "color": "olive",
+      "price": 286,
+      "createdAt": 1662854144845,
+      "updatedAt": 1662854144845,
+      "thumbnailUrl": "http://placeimg.com/400/400"
+    },
+    {
+      "id": "65da2c0f-ce60-475d-b2c5-2e7bc1367019",
+      "categoryId": "1ce16b8a-4ca4-49d6-8126-3926cb2bfd96",
+      "name": "Handcrafted Soft Soap",
+      "color": "olive",
+      "price": 719,
+      "createdAt": 1662854144845,
+      "updatedAt": 1662854144845,
+      "thumbnailUrl": "http://placeimg.com/400/400"
+    },
+    {
+      "categoryId": "c4944816-a19f-47d7-8437-91caac85ce20",
+      "name": "Laptop ...",
+      "color": "pink",
+      "price": 700,
+      "createdAt": 1662926937397,
+      "updatedAt": 1662926937397,
+      "id": "7vMIxH6"
+    }
+  ]
+}

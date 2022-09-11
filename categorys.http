@@ -1,0 +1,7 @@
+@baseUrl=http://localhost:5000
+
+@resourceName=categorys
+
+###
+# @name getAll
+GET {{baseUrl}}/{{resourceName}}

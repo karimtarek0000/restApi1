@@ -1,0 +1,44 @@
+@baseUrl=http://localhost:5000/api
+
+@resourceName=products
+
+# @name filterProducts
+# GET {{baseUrl}}/{{resourceName}}?price_gte=500
+GET {{baseUrl}}/{{resourceName}}?name_like=Concrete
+
+###
+# @name pagination
+GET {{baseUrl}}/{{resourceName}}?_page=1&_limit=2
+
+###
+# @name sortDesc
+GET {{baseUrl}}/{{resourceName}}?_sort=price&_order=desc
+
+###
+# @name sortAsc
+GET {{baseUrl}}/{{resourceName}}?_sort=price&_order=asc
+
+###
+# @name getAll
+GET {{baseUrl}}/{{resourceName}}
+
+###
+# @name addNewProduct
+POST {{baseUrl}}/{{resourceName}}
+Content-Type: application/json
+
+{
+    "categoryId": "c4944816-a19f-47d7-8437-91caac85ce20",
+    "name": "Laptop",
+    "color": "pink",
+    "price": 700
+}
+###
+# @name updateProduct
+PATCH {{baseUrl}}/{{resourceName}}/7vMIxH6
+Content-Type: application/json
+
+{
+    "name": "Laptop ..."
+}
+###
