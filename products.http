@@ -39,6 +39,6 @@ PATCH {{baseUrl}}/{{resourceName}}/7vMIxH6
 Content-Type: application/json
 
 {
-    "name": "Laptop ..."
+    "name": "Macbook pro M1"
 }
 ###
