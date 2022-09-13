@@ -8,7 +8,7 @@ function categoryList(numberOfCategory) {
   const categoryList = [];
   Array.from({ length: numberOfCategory }, () => {
     const category = {
-      id: faker.random.uuid(),
+      id: faker.datatype.uuid(),
       name: faker.commerce.department(),
       createdAt: Date.now(),
       updatedAt: Date.now(),
@@ -26,7 +26,7 @@ function productList(categorys, numberOfProducts) {
   for (const category of categorys) {
     Array.from({ length: numberOfProducts }, () => {
       const product = {
-        id: faker.random.uuid(),
+        id: faker.datatype.uuid(),
         categoryId: category.id,
         name: faker.commerce.productName(),
         color: faker.commerce.color(),
@@ -42,11 +42,32 @@ function productList(categorys, numberOfProducts) {
   return productList;
 }
 
+function usersList(numberOfUsers) {
+  if (numberOfUsers <= 0) return [];
+
+  const usersList = [];
+  for (const category of categorys) {
+    Array.from({ length: numberOfUsers }, () => {
+      const product = {
+        userId: faker.datatype.uuid(),
+        username: faker.internet.userName(),
+        email: faker.internet.email(),
+        password: faker.internet.password(),
+        createdAt: Date.now(),
+      };
+      usersList.push(product);
+    });
+  }
+  return usersList;
+}
+
 // 2 - Add in database system
-const categorys = categoryList(2);
-const products = productList(categorys, 2);
+const categorys = categoryList(10);
+const products = productList(categorys, 10);
+const users = usersList(10);
 
 const db = {
+  users,
   categorys,
   products,
 };
